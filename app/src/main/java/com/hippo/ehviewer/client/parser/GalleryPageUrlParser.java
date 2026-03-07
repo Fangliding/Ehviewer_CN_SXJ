@@ -28,7 +28,7 @@ import java.util.regex.Pattern;
 public final class GalleryPageUrlParser {
 
     private static final Pattern URL_STRICT_PATTERN = Pattern.compile(
-            "https?://(?:" + EhUrl.DOMAIN_EX + "|" + EhUrl.DOMAIN_E + "|" + EhUrl.DOMAIN_LOFI + ")/s/([0-9a-f]{10})/(\\d+)-(\\d+)");
+            "https?://(?:" + EhUrl.DOMAIN_EX + "|" + EhUrl.DOMAIN_EX_ORIGINAL + "|" + EhUrl.DOMAIN_E + "|" + EhUrl.DOMAIN_LOFI + ")/s/([0-9a-f]{10})/(\\d+)-(\\d+)");
 
     private static final Pattern URL_PATTERN = Pattern.compile(
             "([0-9a-f]{10})/(\\d+)-(\\d+)");

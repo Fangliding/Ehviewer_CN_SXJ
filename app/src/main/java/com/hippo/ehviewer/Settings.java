@@ -80,9 +80,7 @@ public class Settings {
             }
         }
         if (!sSettingsPre.contains(KEY_DOMAIN_FRONTING)) {
-            if ("CN".equals(Locale.getDefault().getCountry())) {
-                putDF(true);
-            }
+            putDF(false);
         }
 
     }
@@ -1277,7 +1275,7 @@ public class Settings {
     }
 
 
-    private static final boolean DEFAULT_FRONTING = true;
+    private static final boolean DEFAULT_FRONTING = false;
     public static final String KEY_DOMAIN_FRONTING = "domain_fronting";
 
 

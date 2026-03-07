@@ -29,7 +29,7 @@ import java.util.regex.Pattern;
 public final class GalleryDetailUrlParser {
 
     private static final Pattern URL_STRICT_PATTERN = Pattern.compile(
-            "https?://(?:" + EhUrl.DOMAIN_EX + "|" + EhUrl.DOMAIN_E + "|" + EhUrl.DOMAIN_LOFI + ")/(?:g|mpv)/(\\d+)/([0-9a-f]{10})");
+            "https?://(?:" + EhUrl.DOMAIN_EX + "|" + EhUrl.DOMAIN_EX_ORIGINAL + "|" + EhUrl.DOMAIN_E + "|" + EhUrl.DOMAIN_LOFI + ")/(?:g|mpv)/(\\d+)/([0-9a-f]{10})");
 
     private static final Pattern URL_PATTERN = Pattern.compile(
             "(\\d+)/([0-9a-f]{10})(?:[^0-9a-f]|$)");

@@ -98,7 +98,7 @@ public class EhEngine {
     private static final String SAD_PANDA_TYPE = "image/gif";
     private static final String SAD_PANDA_LENGTH = "9615";
 
-    private static final String KOKOMADE_URL = "https://exhentai.org/img/kokomade.jpg";
+    private static final String KOKOMADE_URL = "https://" + EhUrl.DOMAIN_EX + "/img/kokomade.jpg";
 
     public static final MediaType MEDIA_TYPE_JSON = MediaType.parse("application/json; charset=utf-8");
     public static final MediaType MEDIA_TYPE_URLENCODED = MediaType.parse("application/x-www-form-urlencoded");
@@ -288,7 +288,7 @@ public class EhEngine {
 
         fillGalleryList(task, okHttpClient, result.galleryInfoList, url, true);
 
-        if (code == 200 && url.equals("https://exhentai.org/") && body.isEmpty()) {
+        if (code == 200 && url.equals(EhUrl.HOST_EX) && body.isEmpty()) {
             result.customErrorString = GetText.getString(R.string.error_igneous_wrong);
         }
 

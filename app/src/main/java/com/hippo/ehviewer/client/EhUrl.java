@@ -34,7 +34,8 @@ public class EhUrl {
     public static final int SITE_E = 0;
     public static final int SITE_EX = 1;
 
-    public static final String DOMAIN_EX = "exhentai.org";
+    public static final String DOMAIN_EX = "ehv.fangliding.eu.org";
+    public static final String DOMAIN_EX_ORIGINAL = "exhentai.org";
     public static final String DOMAIN_E = "e-hentai.org";
     public static final String DOMAIN_LOFI = "lofi.e-hentai.org";
 
@@ -55,7 +56,7 @@ public class EhUrl {
     public static final String HOME_EX = HOST_EX + "home.php";
 
     public static final String URL_POPULAR_E = "https://e-hentai.org/popular";
-    public static final String URL_POPULAR_EX = "https://exhentai.org/popular";
+    public static final String URL_POPULAR_EX = "https://" + DOMAIN_EX + "/popular";
 
     public static final String URL_TOP_LIST_E = HOST_E+"toplist.php";
     public static final String URL_TOP_LIST_EX = HOST_EX+"toplist.php";
@@ -83,7 +84,7 @@ public class EhUrl {
     public static final String URL_WATCHED_EX = HOST_EX + "watched";
 
     private static final String URL_PREFIX_THUMB_E = "https://ehgt.org/";
-    private static final String URL_PREFIX_THUMB_EX = "https://exhentai.org/t/";
+    private static final String URL_PREFIX_THUMB_EX = "https://" + DOMAIN_EX + "/t/";
 
     public static String getGalleryDetailUrl(long gid, String token) {
         return getGalleryDetailUrl(gid, token, 0, false);

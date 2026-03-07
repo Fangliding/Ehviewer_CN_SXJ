@@ -113,6 +113,7 @@
 
                 <data android:scheme="http" />
                 <data android:scheme="https" />
+                <data android:host="ehv.fangliding.eu.org" />
                 <data android:host="exhentai.org" />
                 <data android:host="e-hentai.org" />
                 <data android:host="g.e-hentai.org" />
